@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry Add to Cart Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://static.vecteezy.com/system/resources/previews/006/615/478/non_2x/wine-bottle-concepts-vector.jpg" alt="Cherry Logo">
+        </div>
+        <h1>Cherry Add to Cart Shopping</h1>
+    </header>
+    <main>
+        <section class="product-list">
+            <div class="product-card">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimdPxeRAmnteFOISp3iuL8lYitjPKW0qI9SM8LhjfpVOvZlW_lEOQnptjdnldP0zYTTcf7QqXPi1PPWqmDgmSrxE8-EVW2LL99MovzqmTwSou8XK4dYGsIBE-RQBG8MLiWRo__THGXQHvZUUntSKmEBhf8TIGrCary0Bf3UGoVeR_ECi3z1-nDn9OGPPmB/w536-h640/wDSC03763-%20cali%20chardonnay.jpg" alt="Cherry Blossom Wine">
+                <h2>Cherry Blossom Wine</h2>
+                <p>$20</p>
+                <button onclick="addToCart('Cherry Blossom Wine', 20)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://thumbs.dreamstime.com/b/wine-bottle-yellow-background-2096727.jpg" alt="Sunset Valley Wine">
+                <h2>Sunset Valley Wine</h2>
+                <p>$25</p>
+                <button onclick="addToCart('Sunset Valley Wine', 25)">Add to Cart</button>
+            </div>
+            <!-- Add more product cards as needed -->
+        </section>
+        <div id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p id="total-price"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
